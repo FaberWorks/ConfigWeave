@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>FaberWorks.ConfigWeave</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>FaberWorks</Authors>
+    <Description>Variable substitution for Microsoft.Extensions.Configuration with late binding and reload support.</Description>
+    <PackageProjectUrl>https://github.com/FaberWorks/ConfigWeave</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FaberWorks/ConfigWeave</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>configuration;substitution;dotnet;aspnetcore</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>ConfigWeaver.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>

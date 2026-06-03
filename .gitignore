@@ -1,0 +1,17 @@
+# Build output
+bin/
+obj/
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+*.user
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# OS
+.DS_Store
