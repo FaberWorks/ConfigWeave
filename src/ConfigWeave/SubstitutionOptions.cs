@@ -18,4 +18,5 @@ public enum UnresolvedKeyBehavior
     ReturnNull,
 
     /// <summary>Leave the original <c>${Key}</c> / <c>${@ENV_VAR}</c> pattern in the resolved string.</summary>
+    KeepPattern,
 }
